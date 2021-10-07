@@ -50,8 +50,7 @@ bool runAgain(void) {
 
 	cout << "\nWould you like to run again (y or n)? ";
 	cin >> userResponse;
-
-	char ws = cin.get();	// Added to make sure getline in the main does not pick up \n after userResponse.
+	cin.ignore();
 
 	if (userResponse == 'y')
 		return(true);
